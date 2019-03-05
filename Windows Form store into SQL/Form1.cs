@@ -26,8 +26,16 @@ namespace Windows_Form_store_into_SQL
             connectionString = "server=localhost;user id=root;persistsecurityinfo=True;database=userdb;password=vicnesh123";
 
             con = new MySqlConnection(connectionString);
-            con.Open();
-            MessageBox.Show("Connection Open !");
+            try
+            {
+                con.Open();
+                MessageBox.Show("Connection Open ! \n State: " + con.State.ToString());
+            }
+            catch (Exception conErr)
+            {
+                MessageBox.Show(conErr.ToString());
+                //throw;
+            }            
         }
 
         private void closeConnectionToMySql()
