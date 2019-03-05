@@ -1,1 +1,12 @@
 c:\users\vinathan\documents\visual studio 2015\Projects\Windows Form store into SQL\Windows Form store into SQL\bin\Debug\Windows Form store into SQL.exe.config
+C:\Users\vinathan\Documents\Visual Studio 2015\Projects\Windows Form store into SQL\Windows Form store into SQL\bin\Debug\Windows Form store into SQL.exe
+C:\Users\vinathan\Documents\Visual Studio 2015\Projects\Windows Form store into SQL\Windows Form store into SQL\bin\Debug\Windows Form store into SQL.pdb
+C:\Users\vinathan\Documents\Visual Studio 2015\Projects\Windows Form store into SQL\Windows Form store into SQL\bin\Debug\MySql.Data.dll
+C:\Users\vinathan\Documents\Visual Studio 2015\Projects\Windows Form store into SQL\Windows Form store into SQL\bin\Debug\Google.Protobuf.dll
+C:\Users\vinathan\Documents\Visual Studio 2015\Projects\Windows Form store into SQL\Windows Form store into SQL\bin\Debug\MySql.Data.xml
+C:\Users\vinathan\Documents\Visual Studio 2015\Projects\Windows Form store into SQL\Windows Form store into SQL\obj\Debug\Windows Form store into SQL.csprojResolveAssemblyReference.cache
+C:\Users\vinathan\Documents\Visual Studio 2015\Projects\Windows Form store into SQL\Windows Form store into SQL\obj\Debug\Windows_Form_store_into_SQL.Form1.resources
+C:\Users\vinathan\Documents\Visual Studio 2015\Projects\Windows Form store into SQL\Windows Form store into SQL\obj\Debug\Windows_Form_store_into_SQL.Properties.Resources.resources
+C:\Users\vinathan\Documents\Visual Studio 2015\Projects\Windows Form store into SQL\Windows Form store into SQL\obj\Debug\Windows Form store into SQL.csproj.GenerateResource.Cache
+C:\Users\vinathan\Documents\Visual Studio 2015\Projects\Windows Form store into SQL\Windows Form store into SQL\obj\Debug\Windows Form store into SQL.exe
+C:\Users\vinathan\Documents\Visual Studio 2015\Projects\Windows Form store into SQL\Windows Form store into SQL\obj\Debug\Windows Form store into SQL.pdb

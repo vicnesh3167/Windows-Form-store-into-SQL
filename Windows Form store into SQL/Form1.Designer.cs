@@ -35,6 +35,9 @@
             this.userPhone = new System.Windows.Forms.TextBox();
             this.userEmail = new System.Windows.Forms.TextBox();
             this.connectToServer = new System.Windows.Forms.Button();
+            this.showDbData = new System.Windows.Forms.Button();
+            this.disconnectFromMySql = new System.Windows.Forms.Button();
+            this.updateDb = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -87,7 +90,7 @@
             // 
             // connectToServer
             // 
-            this.connectToServer.Location = new System.Drawing.Point(100, 12);
+            this.connectToServer.Location = new System.Drawing.Point(30, 25);
             this.connectToServer.Name = "connectToServer";
             this.connectToServer.Size = new System.Drawing.Size(75, 23);
             this.connectToServer.TabIndex = 6;
@@ -95,11 +98,44 @@
             this.connectToServer.UseVisualStyleBackColor = true;
             this.connectToServer.Click += new System.EventHandler(this.button1_Click);
             // 
+            // showDbData
+            // 
+            this.showDbData.Location = new System.Drawing.Point(178, 25);
+            this.showDbData.Name = "showDbData";
+            this.showDbData.Size = new System.Drawing.Size(75, 23);
+            this.showDbData.TabIndex = 7;
+            this.showDbData.Text = "Show Data";
+            this.showDbData.UseVisualStyleBackColor = true;
+            this.showDbData.Click += new System.EventHandler(this.showDbData_Click);
+            // 
+            // disconnectFromMySql
+            // 
+            this.disconnectFromMySql.Location = new System.Drawing.Point(30, 206);
+            this.disconnectFromMySql.Name = "disconnectFromMySql";
+            this.disconnectFromMySql.Size = new System.Drawing.Size(75, 23);
+            this.disconnectFromMySql.TabIndex = 8;
+            this.disconnectFromMySql.Text = "Disconnect";
+            this.disconnectFromMySql.UseVisualStyleBackColor = true;
+            this.disconnectFromMySql.Click += new System.EventHandler(this.disconnectFromMySql_Click);
+            // 
+            // updateDb
+            // 
+            this.updateDb.Location = new System.Drawing.Point(178, 206);
+            this.updateDb.Name = "updateDb";
+            this.updateDb.Size = new System.Drawing.Size(75, 23);
+            this.updateDb.TabIndex = 9;
+            this.updateDb.Text = "Load";
+            this.updateDb.UseVisualStyleBackColor = true;
+            this.updateDb.Click += new System.EventHandler(this.updateDb_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(282, 257);
+            this.Controls.Add(this.updateDb);
+            this.Controls.Add(this.disconnectFromMySql);
+            this.Controls.Add(this.showDbData);
             this.Controls.Add(this.connectToServer);
             this.Controls.Add(this.userEmail);
             this.Controls.Add(this.userPhone);
@@ -123,6 +159,9 @@
         private System.Windows.Forms.TextBox userPhone;
         private System.Windows.Forms.TextBox userEmail;
         private System.Windows.Forms.Button connectToServer;
+        private System.Windows.Forms.Button showDbData;
+        private System.Windows.Forms.Button disconnectFromMySql;
+        private System.Windows.Forms.Button updateDb;
     }
 }
 
