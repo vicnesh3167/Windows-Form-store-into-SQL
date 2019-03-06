@@ -85,15 +85,22 @@ namespace Windows_Form_store_into_SQL
 
             command = new MySqlCommand(sql, con);
 
-            dataReader = command.ExecuteReader();
-
-            while (dataReader.Read())
+            try
             {
-                Output = Output + dataReader.GetValue(0) + " - " + dataReader.GetValue(1) + " - " + dataReader.GetValue(2) + "\n";
+                dataReader = command.ExecuteReader();
+                while (dataReader.Read())
+                {
+                    Output = Output + dataReader.GetValue(0) + " - " + dataReader.GetValue(1) + " - " + dataReader.GetValue(2) + "\n";
+                }
+                MessageBox.Show(Output);
+                dataReader.Close();
             }
-            MessageBox.Show(Output);
+            catch (Exception queryErr)
+            {
 
-            dataReader.Close();
+                MessageBox.Show(queryErr.ToString());
+            }        
+                        
             command.Dispose();
         }
 
@@ -115,9 +122,17 @@ namespace Windows_Form_store_into_SQL
 
             command = new MySqlCommand(sql, con);
 
-            adapter.UpdateCommand = new MySqlCommand(sql, con);
-            adapter.UpdateCommand.ExecuteNonQuery();
+            try
+            {
+                adapter.UpdateCommand = new MySqlCommand(sql, con);
+                adapter.UpdateCommand.ExecuteNonQuery();
+            }
+            catch (Exception updateErr)
+            {
 
+                MessageBox.Show(updateErr.ToString());
+            }
+            
             command.Dispose(); 
         }
     }
