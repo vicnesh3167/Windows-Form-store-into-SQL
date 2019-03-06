@@ -29,7 +29,7 @@ namespace Windows_Form_store_into_SQL
             try
             {
                 con.Open();
-                MessageBox.Show("Connection Open ! \n State: " + con.State.ToString());
+                MessageBox.Show("Connection Open ! \n State: " + con.State.ToString() + "\n Database: " + con.Database.ToString());
             }
             catch (Exception conErr)
             {
